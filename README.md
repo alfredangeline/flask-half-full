@@ -10,8 +10,6 @@ To run this app, hook a UART that is constantly streaming data up and:
 
 Start the application:  
 
-<code>
-python app.py
-</code>
-
+    python3 app.py
+  
 See http://localhost:5000 and watch your serial data stream.
