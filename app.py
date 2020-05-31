@@ -13,8 +13,8 @@ socketio = SocketIO(app, async_mode=None, logger=True, engineio_logger=True)
 
 thread = Thread()
 thread_stop_event = Event()
-port = '/dev/ttyUSB0'
-baud = 9600
+port = '/dev/ttyS0'
+baud = 230400 
 ser = serial.Serial(port, baud, timeout=0)
 
 def pollSerial():
@@ -23,7 +23,7 @@ def pollSerial():
         data = ser.readline().decode()
         print(data)
         socketio.emit('newdata', {'data': data}, namespace='/test')
-        socketio.sleep(1)
+        socketio.sleep(.001)
 
 
 @app.route('/')

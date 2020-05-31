@@ -4,9 +4,9 @@ import serial
 
 class SerialThread(Thread):
     def __init__(self):
-        self.delay = .5
-        port = '/dev/ttyUSB0'
-        baud = 9600
+        self.delay = .005
+        port = '/dev/ttyS0'
+        baud = 230400 
         self.ser = serial.Serial(port, baud, timeout=0)
         super(SerialThread, self).__init__()
 
