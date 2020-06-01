@@ -6,7 +6,6 @@ $(document).ready(function(){
 
     //receive details from server
     socket.on('newdata', function(msg) {
-        console.log("Received number" + msg.data);
         if (data.length >= 20){
             data.shift()
         }            

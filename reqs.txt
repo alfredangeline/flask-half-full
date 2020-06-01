@@ -3,3 +3,4 @@ Flask-SocketIO==4.3.0
 pyserial==3.4
 gevent==20.5.2
 gevent-websocket==0.10.1
+matplotlib==3.2.1

@@ -12,4 +12,6 @@ Start the application:
 
     python3 app.py
   
-See http://localhost:5000 and watch your serial data stream.
+See http://localhost:5000 and watch your serial data stream.  
+
+Note: I had to install libatlas-base-dev to get numpy to work.
